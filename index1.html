@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vivi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(230, 171, 181);
+        }
+        
+        .profile {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            background-color: rgb(247, 221, 225);
+            padding: 90px;
+            border-radius: 30px;
+            box-shadow: 0 50 20px rgb(8, 8, 8);
+            max-width: 800px;
+            width: 90%;
+        }
+        
+        .profile img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 30%;
+            border: 3px solid pink;
+        }
+        
+        .info h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+        
+        .info p {
+            font-size: 16px;
+            color: black;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+        <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/484906225_1660141458222544_6263421374407736719_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEG52jeYzQ4TSK6yFwbScz_QT8_zZmrWeNBPz_NmatZ45pQ1ZGbvf0zaH2c5sJz1BRXZdz0GfE_31_d9Hpl6GQc&_nc_ohc=SqmWqnvBjKMQ7kNvwH-gsDf&_nc_oc=Adk47IU9uQVPOJgPqHxfVv-_etB5VECb6Avz5AIn6SduYk8TUXQC2tv4tLg9gcYmflU&_nc_zt=23&_nc_ht=scontent.fsgn5-8.fna&_nc_gid=qAGL6MDyEg8Qm-fHPM4zzg&oh=00_AfOmNJfY_QQUNvDYYkNw1ZX83zGFMdI_LSSt36b5oy2N-Q&oe=686180EC"
+            alt="Ảnh đại diện">
+        <div class="info">
+            <h1> Lâm Thị Ngọc Tuyền </h1>
+            <p><strong>Năm sinh:</strong> 05/11/2005</p>
+            <p><strong>Hiện đang là:</strong> Sinh viên năm 3 tại Trường Đại học Công nghiệp </p>
+            <p><strong>Sở thích:</strong> Thích đi du lịch, mua sắm</p>
+        </div>
+    </div>
+</body>
+
+</html>
