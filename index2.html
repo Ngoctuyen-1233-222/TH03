@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .menu h1 {
+            padding: 40px;
+            margin: 40px;
+            text-align: center;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-areas: "menu content footer" "menu content footer";
+            grid-template-columns: 1fr 2fr 2fr;
+            gap: 5px;
+            background-color: bisque;
+            padding: 5px;
+        }
+        
+        .container>div {
+            background-color: rgba(248, 218, 218, 0.8);
+            padding: 10px;
+        }
+        
+        .container>div.header {
+            grid-area: header;
+            text-align: center;
+        }
+        
+        .container>div.menu {
+            grid-area: menu;
+        }
+        
+        .container>div.content {
+            grid-area: content;
+        }
+        
+        .container>div.footer {
+            grid-area: footer;
+        }
+        
+        .content .text {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: pink;
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        .footer .text {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: pink;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bolder;
+        }
+        
+        .text:hover {
+            background-color: aqua;
+        }
+        
+        .menu h1 {
+            text-align: center;
+        }
+        
+        h1:hover {
+            background-color: palegreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="menu">
+            <h1>Cac mon hoc yeu thich cua toi</h1>
+        </div>
+        <div class="content">
+            <div class="text">Tai chinh doanh nghiep</div>
+            <div class="text">Co so du lieu</div>
+            <div class="text">Nguyen ly ke toan</div>
+        </div>
+        <div class="footer">
+            <div class="text">Logic hoc</div>
+            <div class="text">Toan cao cap </div>
+            <div class="text">Marketing so</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
